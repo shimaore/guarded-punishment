@@ -1,0 +1,27 @@
+{
+  "name": "guarded-punishment",
+  "version": "1.0.0",
+  "description": "Moves CDRs out of regclients",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --only=dev && coffee -c *.coffee.md",
+    "test": "nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitlab.com/shimaore/guarded-punishment"
+  },
+  "keywords": [
+    "CCNQ4"
+  ],
+  "author": "stephane@shimaore.net",
+  "license": "Unlicense",
+  "private": true,
+  "devDependencies": {
+    "coffeescript": "^2.4.0"
+  },
+  "dependencies": {
+    "superagent": "^5.0.2",
+    "tangible": "^3.0.0"
+  }
+}
