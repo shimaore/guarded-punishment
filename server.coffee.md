@@ -96,7 +96,7 @@ Don't do too much with streaming. The idea is that we keep this list _very_ shor
 
       console.log 'main', 'Received CDR dbs', cdr_dbs
 
-      for db in cdr_dbs
+      for db in cdr_dbs.reverse()
         await handle_db db
 
       console.log 'main', 'Done'
