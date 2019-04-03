@@ -74,7 +74,7 @@ The DB name is normally along the lines of `cdr-YYYY-MM-DD`, see astonishing-com
           try await cancel_replication db
           await onetime_replication db
           console.log "Deleting #{db}"
-          # await Request.delete "#{local_base}/#{db}"
+          await Request.delete "#{local_base}/#{db}"
         else
           console.error "Not deleting #{db}, no remote base"
       else
