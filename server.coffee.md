@@ -66,7 +66,7 @@ The DB name is normally along the lines of `cdr-YYYY-MM-DD`, see astonishing-com
       try
         await Request.put "#{spicy_base}/#{db}" # use grumpy-actor to create the DB
       catch error
-        return Promise.reject error unless error.status is 409
+        return Promise.reject error unless error.status in [409,412]
 
       if db < "cdr-#{yesterday()}"
         if remote_base
