@@ -78,7 +78,7 @@ The DB name is normally along the lines of `cdr-YYYY-MM-DD`, see astonishing-com
         else
           console.error "Not deleting #{db}, no remote base"
       else
-        await start_replication today
+        await start_replication db
       return
 
     main = foot 'main', ->
